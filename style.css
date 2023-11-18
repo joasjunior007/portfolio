@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.logo {
+    color: black;
+    font-size: 20px;
+    background-color: #00ffff;
+    border: 0;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px #00ffff;
+    cursor: pointer;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: .2s;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #00ffff;
+    transform: scale(1.05);
+}
+
+.topo-do-site .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.topo-do-site h2 {
+    color: azure;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site p {
+    color: azure;
+    margin: 40px 0;
+}
+
+.img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border: 30px;
+    background-color: #00ffff;
+    border-radius: 110px;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+.especialidades {
+    padding: 40px 4%;
+}
+
+h3.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h3.titulo span {
+    color: #00ffff;
+}
+
+.especialidades .flex {
+    gap: 60px;
+    display: flex;
+}
+
+.especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ffffff78;
+
+}
+
+.especialidades-box i {
+    font-size: 70px;
+    color: #00ffff;
+}
+
+.especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+section.Sobre {
+    padding: 80px 4%;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+section.Sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.Sobre .txt-sobre {
+    color: #fff;
+}
+
+.Sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.Sobre .txt-sobre h2 span {
+    color: #00ffff;
+    display: block;
+}
+
+.Sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #00ffff;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+section .formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #00ffff;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #00ffff;
+}
+
+footer .line-footer p i {
+    color: #00ffff;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+footer .logo-footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer .btn-social {
+    margin-left: 1350px;
+}
